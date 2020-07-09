@@ -1,4 +1,4 @@
-local matspath = "materials/models/metrostroi_train/common/routes/white/m"
+local matspath = "materials/models/metrostroi_train/common/routes/clear_white/m"
 if SERVER then
 	for i = 0,9 do
 		resource.AddFile(matspath..i..".vmt")
