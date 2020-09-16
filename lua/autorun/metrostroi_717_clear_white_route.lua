@@ -12,7 +12,7 @@ local paramname = "Clear White"
 
 local tablename = "RouteNumberType"
 local readtablename = "Тип номера маршрута"
-timer.Simple(0,function()
+hook.Add("InitPostEntity","Metrostroi 717_mvm white route",function()
     local ENT = scripted_ents.GetStored(nomerogg.."_custom")
     if ENT then ENT = ENT.t else return end
 	if not ENT.Spawner then return end
